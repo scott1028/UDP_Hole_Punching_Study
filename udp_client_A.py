@@ -17,5 +17,5 @@ sock = socket.socket(socket.AF_INET, # Internet
 
 while True:
 	sock.sendto(MESSAGE, (UDP_IP, UDP_PORT))
-	print "send message:", data
+	print "send message:", MESSAGE
 	time.sleep(2)
