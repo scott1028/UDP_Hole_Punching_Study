@@ -19,3 +19,7 @@
 * 用 stun server 來說就是雙方持續發送 UDP 封包給 Stun Server 保持 Nat Hole 轉換通道維持時間。然後雙方在各用對方的轉換 Port 將資料送給對方。
 * 當然你也可以選擇用 nc 來測試ex: nc -u 42.70.141.53 44689 -p 5005
 * http://linux.die.net/man/1/nc, -u: udp, -p: src port
+
+# Nat Server 紀錄的訊息
+1. 當前Nat某一個 Port 其接收外部的 某主機($IP:$Port) 組合所對應的內部主機為哪一台。
+2. 所以只要在內部主機持續發送封包保持UDP Hole Punching 狀態下，按照使用外部主機的$IP:$Port組合發送封包給這台Nat Server都會被轉送到該內部主機。
