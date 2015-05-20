@@ -5,6 +5,7 @@
 3. Symmetric Nat 為 Client 發起 UDP 連線到剛剛的 Cone Side Server 方。
 ~~~
 *Symmetric 端的 Client 要持續送 Empty Packets 或有資料的 Packet來保持 UDP Hole Punching 的維持時間
+
 *因為起一個 Client 發出封包會戰本地端一個 Port，就是利用這個 Port 將資料收回來，
  所以要持續送資料 保持這個Port跟Nat伺服器的轉換通道暢通KeepAlive。
 ~~~
