@@ -1,6 +1,6 @@
 # 演算法
 
-1. 雙方 Check 自己的 Nat 類型，至少要有一方為 Cone Nat Side(作為 Server 方)
+1. 雙方 Check 自己的 Nat 類型，至少要有一方為 Cone Nat Side(作為 Server 方)，會請 Symmetric 內的主機發一個封包給 Cone Nat 的主機(很重要)
 2. Server 方建立一個 UDP Server 等待連線。
 3. Symmetric Nat 為 Client 發起 UDP 連線到剛剛的 Cone Side Server 方。
 ~~~
