@@ -11,3 +11,7 @@
 5. 接下來只要 Server 方收到 Client 的 Message 在用 sock 物件將資訊 send 回去 Client 端的 IP:Port。
 6. 當 Server 方知道 Client Nat Server 對應內部 Client 的 Port 時候, 直接關閉目前的 Server.py 用另一個 udp_client_B.py 用相同的 port 就可以把資料 Send 回去了。
 7. 兩邊完成 P2P UDP 連線。
+
+# 加入 Stun Server
+
+* 用 stun server 來說就是雙方持續發送 UDP 封包給 Stun Server 保持 Nat Hole 轉換通道維持時間。然後雙方在各用對方的轉換 Port 將資料送給對方。
