@@ -23,3 +23,7 @@
 # Nat Server 紀錄的訊息
 1. 當前Nat某一個 Port 其接收外部的 某主機($IP:$Port) 組合所對應的內部主機為哪一台。
 2. 所以只要在內部主機持續發送封包保持UDP Hole Punching 狀態下，按照使用外部主機的$IP:$Port組合發送封包給這台Nat Server都會被轉送到該內部主機。
+
+# NAT Type Introduce
+
+- ![Alt text](https://raw.githubusercontent.com/scott1028/UDP_Hole_Punching_Study/master/nat_type_introduce.png "nat_type_introduce")
